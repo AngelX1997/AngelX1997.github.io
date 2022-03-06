@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta content="telephone=no" name="format-detection" />
+	<title>哈利波特：魔法觉醒</title>
+	<!-- 分享链接时的展示文本：必须填写！ -->
+	<meta name="description" content="《哈利·波特》官方正版授权，打造全新魔法世界体验。欧式复古绘本风，收集魔法卡牌，体验刺激的巫师对决！入学霍格沃茨，神秘魔法之旅即将开启...">
+	<meta name="higame-image" content="./img/icon.png?jv=1.0.20201119" />
+	<meta name="higame-share-title" content="《幻书启世录》2020年敬请期待" />
+	<link rel="stylesheet" href="css/swiper.min.css" />
+	<link rel="stylesheet" href="css/main.css?jv=1.0.20210514" />
+	<script type="text/javascript">
+		!(function (win, doc, width) {
+			function setFontSize() {
+				var winWidth = window.innerWidth;
+				var size = Math.round((winWidth / width) * 100);
+				doc.documentElement.style.fontSize = (size < 100 ? size : 100) + "px";
+			};
+			var evt = "onorientationchange" in win ? "orientationchange" : "resize";
+			var timer = null;
+
+			win.addEventListener(evt, function () {
+				clearTimeout(timer);
+				timer = setTimeout(setFontSize, 300);
+			}, false);
+
+			win.addEventListener("pageshow", function (e) {
+				if (e.persisted) {
+					clearTimeout(timer);
+					timer = setTimeout(setFontSize, 300);
+				}
+			}, false);
+			setFontSize();
+		})(window, document, 640);
+	</script>
+	<style type="text/css">
+		.wx-mask {
+			position: fixed;
+			z-index: 98;
+			-webkit-backface-visibility: hidden;
+			width: 100%;
+			height: 100%;
+			bottom: 0;
+			left: 0;
+			background-color: rgba(0, 0, 0, 0.3);
+			-webkit-transition: all .5s;
+			transition: all .5s;
+		}
+
+		.tip {
+			position: absolute;
+			right: 8px;
+			top: 0;
+			width: 168px;
+		}
+	</style>
+</head>
+
+<body>
+	<script>
+		//设置webview字体大小不受系统修改而改变
+		(function () {
+			if (window.HiSpaceObject) {
+				window.HiSpaceObject.setTextSizeNormal();
+			}
+		})();
+	</script>
+	<div class="main">
+		<!-- 头部 -->
+		<div class="top">
+			<div class="header-info-wrap">
+				<img class="icon" src="img/logo.png?jv=1.0.20201214" />
+				<div class="header-info">
+					<a data-forumid='1002496'>进入社区</a>
+					<h1>哈利波特：魔法觉醒</h1>
+					<p>2021年9月9日上线</p>
+				</div>
+			</div>
+		</div>
+		<!-- 内容 -->
+		<div class="content">
+			<!-- 预约 -->
+			<div class="part part-order">
+				<div class="title"><img src="img/order.png"></div>
+				<div class="order-box">
+					<div class="order-item">
+						<a class="join-btn" src="img/join_3.png"></a>
+					</div>
+					<div class="order-item">
+						<a class="join-btn" src="img/join_3.png"></a>
+					</div>
+				</div>
+				<div class="order-box" style="margin-top: 0.3rem;">
+					<div class="order-item reward-item">
+						<a class="join-btn" href="https://uowap.hicloud.com/appdl-uomp-cn/campaignpreview/425fb8f4-389d-4ded-ade8-9db56022789c/index.html?campaignId=72218&hwFullScreen=1&agchannel=detail" src="img/join_3.png"></a>
+					</div>
+					<div class="order-item reward-item">
+						<a class="join-btn"
+							href="https://uowap.hicloud.com/appdl-uomp-cn/campaignpreview/695dbfb0-2036-4a13-83ba-092b89cef424/index.html?campaignId=87583&hwFullScreen=1&agchannel=hali"
+							src="img/join_3.png"></a>
+					</div>
+					<div class="order-item reward-item">
+						<a class="join-btn"
+							href="https://uowap.hicloud.com/appdl-uomp-cn/campaignpreview/af8e7e9a-c3be-4463-83e2-1f6d94f980d3/index.html?campaignId=46954&agchannel=appdetail&hwFullScreen=1"
+							src="img/join_3.png"></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="part part-welfare">
+				<div class="title"><img src="img/title_welfare.png"></div>
+				<div class="part-welfare-imgs">
+					<img src="img/welfare_pic1.png" />
+					<img src="img/welfare_pic2.png" />
+					<img src="img/welfare_pic3.png" />
+				</div>
+				<div class="part-welfare-process">
+					<img src="img/welfare_process_txt1.png">
+					<div class="part-welfare-process-bg">
+						<div class="part-welfare-process-line"></div>
+					</div>
+					<img src="img/welfare_process_txt2.png">
+				</div>
+				<div class="part-welfare-textimg">
+					<img src="img/welfare_text.png">
+				</div>
+			</div>
+
+			<div class="part part-intro">
+				<div class="title"><img src="img/title_intro.png"></div>
+				<div class="part-intro-content">
+					<div class="part-intro-textimg">
+						<img src="img/intro_text.png">
+					</div>
+					<a class="part-intro-btn" id="videoBtn">
+						<span></span>
+						<div class="part-intro-btn-bg"></div>
+					</a>
+					<div class="part-intro-birds">
+						<!-- <img src="img/birds.png"> -->
+						<div class="birds-anim"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 视频弹窗 -->
+			<div class="popvideo" style="display: none;">
+				<div class="popvideo-wrap">
+					<div class="popvideo-content">
+						<video id="video" src="https://nie.v.netease.com/nie/2020/0615/f3e7da7b189d78e11e29801def552310qt.mp4"
+							controls="controls" preload="auto"></video>
+					</div>
+					<div class="popvideo-close-btn"></div>
+				</div>
+			</div>
+
+			<div class="part part-scene">
+				<div class="title"><img src="img/title_scene.png"></div>
+				<div class="part-scene-content">
+					<div class="part-scene-img"><img src="img/pic_1.png"></div>
+					<div class="part-scene-txt"><img src="img/scene_txt_1.png"></div>
+					<div class="part-scene-img"><img src="img/pic_2.png"></div>
+					<div class="part-scene-txt"><img src="img/scene_txt_2.png"></div>
+					<div class="part-scene-img"><img src="img/pic_3.png"></div>
+					<div class="part-scene-txt"><img src="img/scene_txt_3.png"></div>
+				</div>
+			</div>
+
+			<div class="part part-partner">
+				<div class="title"><img src="img/title_partner.png"></div>
+				<div class="part-partner-content">
+					<div class="part-partner-swiper">
+						<div class="swiper-container" id="swiper_partner">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="img/partner_1.png" /></div>
+								<div class="swiper-slide"><img src="img/partner_2.png" /></div>
+								<div class="swiper-slide"><img src="img/partner_3.png" /></div>
+								<div class="swiper-slide"><img src="img/partner_4.png" /></div>
+								<div class="swiper-slide"><img src="img/partner_5.png" /></div>
+								<div class="swiper-slide"><img src="img/partner_6.png" /></div>
+								<div class="swiper-slide"><img src="img/partner_7.png" /></div>
+								<div class="swiper-slide"><img src="img/partner_8.png" /></div>
+								<div class="swiper-slide"><img src="img/partner_9.png" /></div>
+								<div class="swiper-slide"><img src="img/partner_10.png" /></div>
+							</div>
+						</div>
+					</div>
+					<div class="part-partner-heads-swiper">
+						<div class="swiper-container" id="swiper_heads">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="partner-head"><img src="img/partner_head_1.png" /></div>
+								</div>
+								<div class="swiper-slide">
+									<div class="partner-head"><img src="img/partner_head_2.png" /></div>
+								</div>
+								<div class="swiper-slide">
+									<div class="partner-head"><img src="img/partner_head_3.png" /></div>
+								</div>
+								<div class="swiper-slide">
+									<div class="partner-head"><img src="img/partner_head_4.png" /></div>
+								</div>
+								<div class="swiper-slide">
+									<div class="partner-head"><img src="img/partner_head_5.png" /></div>
+								</div>
+								<div class="swiper-slide">
+									<div class="partner-head"><img src="img/partner_head_6.png" /></div>
+								</div>
+								<div class="swiper-slide">
+									<div class="partner-head"><img src="img/partner_head_7.png" /></div>
+								</div>
+								<div class="swiper-slide">
+									<div class="partner-head"><img src="img/partner_head_8.png" /></div>
+								</div>
+								<div class="swiper-slide">
+									<div class="partner-head"><img src="img/partner_head_9.png" /></div>
+								</div>
+								<div class="swiper-slide">
+									<div class="partner-head"><img src="img/partner_head_10.png" /></div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- 活动规则 -->
+	<div class="rule-mask" id="rule" style="display:none;">
+		<img src="img/rule.jpg" class="rule-desc" />
+		<div class="rule-close-btn"></div>
+	</div>
+
+	<!-- 下载提示蒙版箭头 -->
+	<div class="wx-mask" id="wxm" style="display:none;">
+		<img src="img/tip.png" class="tip" />
+	</div>
+	<!-- 下载提示蒙版箭头 end-->
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js?jv=1.0.20190722"></script>
+	<script type="text/javascript" src="js/hwlttz.js?jv=1.0.20210422"></script>
+	<script type="text/javascript" src="js/swiper.min.js?jv=1.0.20190722"></script>
+	<script type="text/javascript" src="js/index.js?jv=1.0.20210514"></script>
+</body>
+
+</html>
+<script type="text/javascript">
+	$(document).ready(function () {
+
+		if (!window.HiSpaceObject) {
+			var isWeixin = is_weixin();
+			if (isWeixin) {
+				document.getElementById("wxm").style.display = "";
+				//设置下载提示蒙版箭头图片点击事件
+				document.getElementById("wxm").onclick = function () {
+					window.setTimeout(function () {
+						document.getElementById("wxm").style.display = "none";
+					}, 550);
+				};
+			} else {
+				openClient();
+			}
+		}
+	});
+
+	function openClient() {
+		var delayTime = 3000;
+		// 通过iframe的方式试图打开APP，如果能正常打开，会直接切换到APP，并自动阻止a标签的默认行为
+		// 否则打开a标签的href链接
+		var ifr = document.createElement('iframe');
+		document.body.appendChild(ifr);
+		ifr.style.display = 'none';
+
+		var orderUrl = "https://a.vmall.com/order/app?appId=C101210021%26pkgName=com.netease.harrypotter.huawei"; //TODO
+		ifr.src =
+			"hiapp://com.huawei.appmarket?activityName=activityUri|webview.activity&params={\"params\":[{\"name\":\"url\",\"type\":\"String\",\"value\":\"" +
+			orderUrl + "\"},{\"name\":\"uri\",\"type\":\"String\",\"value\":\"external_webview\"}]}&channelId=123412";
+
+		ifr.style.display = 'none';
+		setTimeout(function () {
+			$.ajax({
+				url: "https://a.vmall.com/uc/getAppIdByPkg?packageName=com.huawei.appmarket",
+				type: "get",
+				dataType: "json",
+				data: {},
+				success: function (data) {
+					if (data) {
+						document.body.removeChild(ifr);
+						window.location.href = data.app.url;
+					}
+				}
+			});
+		}, delayTime);
+	}
+
+	//是否微信打开
+	function is_weixin() {
+		var ua = navigator.userAgent.toLowerCase();
+		if (ua.match(/MicroMessenger/i) == "micromessenger" ||
+			ua.match(/WeiBo/i) == "weibo") {
+			return true;
+		} else {
+			return false;
+		}
+	}
+</script>
